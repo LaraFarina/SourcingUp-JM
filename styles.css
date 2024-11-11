@@ -21,16 +21,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
-    background-color: #fff; /* Fondo blanco */
-    color: #3d00a5; /* Color violeta para el texto */
+    background-color: #fff; 
+    color: #3d00a5; 
     position: relative;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: #3d00a5; /* Color violeta para el logo */
+    color: #3d00a5;
   }
   nav ul {
     display: flex;
@@ -43,26 +43,24 @@
   
   nav ul li a {
     text-decoration: none;
-    color: #8f8f8f; /* Color gris por defecto */
+    color: #8f8f8f; 
     font-weight: bold;
     font-size: 0.9em;
-    transition: color 0.3s ease; /* Para una transición suave */
+    transition: color 0.3s ease; 
   }
   
   nav ul li a:hover {
-    color: #3d00a5; /* Color violeta cuando pasa el mouse */
+    color: #3d00a5; 
   }
   
   .menu-toggle {
     display: none;
     font-size: 1.5em;
-    color: #3d00a5; /* Color violeta para el icono del menú */
+    color: #3d00a5; 
     background: none;
     border: none;
     cursor: pointer;
   }
-  
-  
   .hero {
     display: flex;
     align-items: center;
@@ -99,7 +97,7 @@
     padding: 12px 24px;
     color: #3d00a5;
     background-color: #ffffff;
-    border-radius: 8px; /* Estilo más cuadrado */
+    border-radius: 8px; 
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
@@ -117,11 +115,12 @@
   }
   
   .hero-image img {
-    width: 650px; /* Tamaño de imagen ajustado */
-    border-radius: 10px; /* Border radius específico */
+    width: 650px;
+    border-radius: 10px; 
   }
   
-  .about {
+  /* Sobre Mí Section */
+.about {
     padding: 50px 10%;
     text-align: center;
     background-color: #fff;
@@ -132,16 +131,54 @@
   
   .about h2 {
     color: #3d00a5;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em; 
+    margin-bottom: 30px;  
   }
   
   .about p {
-    font-size: 1em;
+    font-size: 1.1em; 
     color: #666;
     line-height: 1.6;
   }
   
+  .about-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: flex-start;  
+  }
+  
+  .about-image {
+    flex: 1;
+    max-width: 500px;  
+    padding-right: 10px;
+    margin-right: 10px;  
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .about-text {
+    flex: 2;
+  }
+  
+  .about-text h2 {
+    font-size: 2.2rem;  
+    color: #6A2EA0;
+    margin-bottom: 15px; 
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;  
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;  
+  }
   footer {
     text-align: center;
     padding: 20px;
@@ -149,44 +186,45 @@
     color: #333;
     font-size: 0.9em;
   }
-  
-  /* Responsive */
+   
   @media (max-width: 768px) {
     header {
       padding: 20px 5%;
     }
   
     nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: #fff; /* Fondo blanco en el menú móvil */
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      }
+      display: none;
+      flex-direction: column;
+      background-color: #fff;  
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
     nav ul.show {
       display: flex;
     }
+  
     nav ul li a {
-        color: #666; /* Gris por defecto */
-        font-size: 1.2em; /* Tamaño de fuente ajustado para el móvil */
-        margin: 15px 0; /* Espaciado entre los elementos */
-      }
-    
-      nav ul li a:hover {
-        color: #3d00a5; /* Violeta al pasar el ratón */
-      }
+      color: #666;  
+      font-size: 1.2em; 
+      margin: 15px 0;  
+    }
+  
+    nav ul li a:hover {
+      color: #3d00a5;  
+    }
+  
     nav ul li {
       margin: 15px 0;
     }
   
     .menu-toggle {
       display: block;
-    }
-  
+    } 
     .hero {
       flex-direction: column;
       text-align: center;
@@ -201,9 +239,36 @@
     }
   
     .hero-image img {
-      width: 70%; /* Ajusta el tamaño de la imagen en móviles */
+      width: 70%;  
+    }
+   
+    .about {
+        padding: 30px 5%;
+      }
+  
+    .about-container {
+      flex-direction: column;  
+      text-align: center;
+    }
+  
+    .about-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;  
+      }
+  
+    .about-text {
+      flex: none;  
+      margin-top: 20px;
+    }
+  
+    .about-text h2 {
+      font-size: 1.8rem; 
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+      color: #555;
     }
   }
-  
-
   
