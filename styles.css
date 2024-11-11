@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff; /* Fondo blanco */
+    color: #3d00a5; /* Color violeta para el texto */
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar */
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3d00a5; /* Color violeta para el logo */
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #8f8f8f; /* Color gris por defecto */
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: color 0.3s ease; /* Para una transición suave */
+  }
+  
+  nav ul li a:hover {
+    color: #3d00a5; /* Color violeta cuando pasa el mouse */
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: #3d00a5; /* Color violeta para el icono del menú */
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    background-color: #3d00a5;
+    color: #fff;
+    flex-grow: 1;
+  }
+  
+  .hero-content {
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h1 span {
+    color: #ffffff;
+  }
+  
+  .hero-content p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  .contact-button {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 12px 24px;
+    color: #3d00a5;
+    background-color: #ffffff;
+    border-radius: 8px; /* Estilo más cuadrado */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  .contact-button i {
+    margin-right: 8px;
+  }
+  
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 650px; /* Tamaño de imagen ajustado */
+    border-radius: 10px; /* Border radius específico */
+  }
+  
+  .about {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #fff;
+    margin-top: -30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    color: #3d00a5;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 0.9em;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header {
+      padding: 20px 5%;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff; /* Fondo blanco en el menú móvil */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    nav ul.show {
+      display: flex;
+    }
+    nav ul li a {
+        color: #666; /* Gris por defecto */
+        font-size: 1.2em; /* Tamaño de fuente ajustado para el móvil */
+        margin: 15px 0; /* Espaciado entre los elementos */
+      }
+    
+      nav ul li a:hover {
+        color: #3d00a5; /* Violeta al pasar el ratón */
+      }
+    nav ul li {
+      margin: 15px 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content h1 {
+      font-size: 2em;
+    }
+  
+    .hero-image {
+      margin-top: 20px;
+    }
+  
+    .hero-image img {
+      width: 70%; /* Ajusta el tamaño de la imagen en móviles */
+    }
+  }
+  
+
+  
