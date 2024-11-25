@@ -49,7 +49,7 @@
     <div class="product-grid">
       <div class="product-card">
         <div class="product-card-content">
-          <h3>CommerceUp</h3>
+          <img src="imagenes/commerceUp.png">
           <p>Con más de 25 años en el mundo de la tecnología, he dedicado mi carrera a transformar ideas en realidades. Mi pasión es llevar productos de 0 a 1, liderando equipos de alto rendimiento. Desde 2002, he trabajado de manera remota, gestionando equipos de hasta 50 personas.</p>
 
           <a href="#">Cotizá CommerceUp →</a>
@@ -57,7 +57,7 @@
       </div>
       <div class="product-card">
         <div class="product-card-content">
-          <h3>Cliiver</h3>
+          <img src="imagenes/clivver.png">
           <p>Cliiver es un avanzado conjunto de robots de inteligencia artificial diseñado para transformar la manera en que gestionas tu negocio. Automatiza con IA, permitiendo que tu equipo se enfoque en lo que realmente importa: hacer crecer tu empresa. Con Cliiver, mejorará la eficiencia operativa y se reducirán los costos, adaptándose perfectamente a cualquier empresa en búsqueda de innovación.</p>
           <a href="#">Conocé Cliiver →</a>
         </div>
@@ -66,32 +66,33 @@
   </section>
 
   <!-- Sección Servicios -->
-  <section class="services-section">
+  <section class="cursos">
     <h2>Servicios</h2>
-    <div class="product-grid">
-      <div class="product-card">
+    <div class="cards">
+      <div class="card">
         <h3>SourcingUp</h3>
         <p>
           Agencia de ecommerce B2B que ofrece estrategias de digitalización, optimización de procesos y aumento de ventas para empresas.
         </p>
-        <a href="#">Conocé SourcingUp →</a>
+        <a href="#" class="btn">Conocé SourcingUp</a>
       </div>
-      <div class="product-card">
+      <div class="card">
         <h3>Fractional CTO</h3>
         <p>
           Servicios de CTO fraccional para liderar la estrategia tecnológica de tu negocio sin necesidad de una contratación a tiempo completo.
         </p>
-        <a href="#">Contáctanos →</a>
+        <a href="#" class="btn">Contáctanos</a>
       </div>
-      <div class="product-card">
+      <div class="card">
         <h3>Desarrollamos tu MVP</h3>
         <p>
           Desarrollamos el MVP de tu StartUp a bajo costo gracias a la experiencia de más de 25 años desarrollando productos online.
         </p>
-        <a href="#">Contáctanos →</a>
+        <a href="#" class="btn">Contáctanos</a>
       </div>
     </div>
   </section>
+  
   <section class="cursos">
     <h2>Cursos</h2>
     <div class="cards">
@@ -143,10 +144,76 @@
       </div>
     </div>
   </section>
+  
 
-  <footer>
-    <p>&copy; 2024 Julián Medina</p>
-  </footer>
+  <section class="contacto">
+    <div class="contacto-header">
+      <h1>Contacto</h1>
+      <p>Si deseas más información sobre mis servicios o cursos, no dudes en contactarme.</p>
+    </div>
+    
+    <div class="contacto-form">
+      <div class="mensaje">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="Escribe aquí tu mensaje..."></textarea>
+        <button class="btn-contactar">Contactar →</button>
+      </div>
+      
+      <div class="reseñas">
+        <p>Tu opinión es muy importante para mí. Déjame tu reseña en Google y LinkedIn.</p>
+        <button class="btn-reseña">
+          <img src="imagenes/linkedin.webp" alt="LinkedIn" class="btn-icon">
+          Deja tu reseña en LinkedIn
+      </button>
+      <button class="btn-reseña">
+          <img src="imagenes/google.png" alt="Google" class="btn-icon">
+          Deja tu reseña en Google
+      </button>
+      </div>
+    </div>
+    
+ 
+  </section>
+  
+  <div class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p><strong>Julián Medina</strong></p>
+            <p>Soy Julián Medina, tu socio tecnológico. Ayudo a empresas a digitalizarse, optimizar sus procesos, aumentar sus ventas con soluciones B2B y desarrollar MVPs.</p>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h4>Productos</h4>
+                <ul>
+                    <li>CommerceUp</li>
+                    <li>Cliver</li>
+                    
+              
+                </ul>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <ul>
+                    <li>SourcingUp</li>
+                    <li>Fractional CTO</li>
+                    <li>Desarrollamos tu MVP</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Cursos</h4>
+                <ul>
+                    <li>¿Cómo implementar mi ecommerce B2B?</li>
+                    <li>¿Cómo aprovecho la IA en mi empresa?</li>
+                    <li>Estrategias de Marketing Online B2B</li>
+                    <li>Optimización de Conversiones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Julián Medina. Todos los derechos reservados.</p>
+    </div>
+</div>
 
   <script>
     document.querySelector('.menu-toggle').addEventListener('click', function() {
