@@ -10,6 +10,40 @@ html, body {
   background-color: #FEFAFF;;
 }
 
+.contact-button {
+  margin-top:10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Espacio entre el ícono y el texto */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #20c157; /* Color verde característico de WhatsApp */
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto más atractivo */
+}
+
+.contact-button i {
+  font-size: 20px; /* Tamaño del ícono */
+}
+
+.contact-button:hover {
+  background-color: #23da60; /* Color más oscuro al pasar el ratón */
+  transform: translateY(-2px); /* Efecto de elevación */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-button:active {
+  transform: translateY(0); /* Vuelve a su posición original al hacer clic */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -188,7 +222,7 @@ nav ul li a:hover {
   overflow: hidden;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 600px;
+  max-width: 700px;
   text-align: left;
 }
 
@@ -268,7 +302,7 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   padding: 30px; /* Relleno interior de las tarjetas */
   width: 100%; /* Ocupa el 100% del espacio disponible */
-  max-width: 650px; /* Aumento considerable del ancho máximo de la tarjeta */
+  max-width: 900px; /* Aumento considerable del ancho máximo de la tarjeta */
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 0 auto; /* Centrado de las tarjetas */
@@ -338,14 +372,14 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.cards {
+.experiencias .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
 }
 
-.card {
+.experiencias .card {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
