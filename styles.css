@@ -67,7 +67,15 @@ header {
   color: #3d00a5;
 }
 
-nav ul {
+header {
+  position: fixed; /* Fija el nav */
+  top: 0; /* Posiciónalo en la parte superior */
+  left: 0; /* Alinea al inicio horizontalmente */
+  width: 100%; /* Abarca todo el ancho */
+  z-index: 1000; /* Asegúrate de que esté encima del contenido */
+}
+
+  nav ul {
   display: flex;
   list-style: none;
 }
